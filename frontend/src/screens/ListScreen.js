@@ -91,7 +91,7 @@ const ListScreen = ({history}) => {
 
 
                 {loading || loadingAllLists || loadingAllMyLists || loadingPrivateLists ? null :
-                    error || errorAllLists || errorAllMyLists || errorPrivateLists ? <Message variant='danger'>{error}</Message> : (
+                    error || errorAllLists || errorAllMyLists || errorPrivateLists ? <Message variant='danger'>{error|| 'Lists not found'}</Message> : (
 
                         <tbody>
                             {publicListsList.map((list) => (
